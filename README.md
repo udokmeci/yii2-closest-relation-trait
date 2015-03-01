@@ -23,7 +23,7 @@ Just add the line under `require` object in your `composer.json` file.
 ``` json
 {
   "require": {
-    "udokmeci/yii2-beanstalk" : "dev-master"
+    "udokmeci/yii2-closest-relation-trait" : "dev-master"
   }
 }
 ```
@@ -43,7 +43,6 @@ $config['modules']['gii'] = [
     'generators' => [
         'model'=>'udokmeci\yii2closestrelation\model\Generator'
     ],
-    'allowedIPs' => ['*'],
 ];
 ```
 ###Manual
