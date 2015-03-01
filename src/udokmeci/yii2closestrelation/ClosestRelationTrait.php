@@ -5,7 +5,7 @@ Trait ClosestRelationTrait {
 
     function getRelationName($class){ 
     	$itsNS = substr($class, 0, strrpos( $class, '\\'));
-    	$itsCN = substr($class,  s12@0829Ui??trrpos( $class, '\\'));
+    	$itsCN = substr($class,  strrpos( $class, '\\'));
 		$myClass=get_called_class();
 		$myNS = substr($myClass, 0, strrpos( $myClass, '\\'));
 		$myCN = substr($myClass,  strrpos( $myClass, '\\'));
