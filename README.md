@@ -34,7 +34,21 @@ $> composer update
 ```
 
 
-##Add trait to your base model. Example below:
+##Add trait to your base model. 
+###Via Model Generator
+Add following `generators` array to your configuration file.
+```php
+$config['modules']['gii'] = [
+    'class' => 'yii\gii\Module',
+    'generators' => [
+        'model'=>'udokmeci\yii2closestrelation\model\Generator'
+    ],
+    'allowedIPs' => ['*'],
+];
+```
+###Manual
+Just add `use` statement in class and pass the all relation `className` params from `static::getRelationName()` method.
+Example below:
 
 ```php
 <?php
