@@ -14,7 +14,7 @@ use yii\db\Schema;
 use yii\gii\CodeFile;
 use yii\helpers\Inflector;
 use yii\base\NotSupportedException;
-use yii\gii\generators\model\Generator;
+
 
 /**
  * This generator will generate one or multiple ActiveRecord classes for the specified database table.
@@ -22,7 +22,7 @@ use yii\gii\generators\model\Generator;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class Generator extends Generator
+class Generator extends \yii\gii\generators\model\Generator
 {
  
     /**
