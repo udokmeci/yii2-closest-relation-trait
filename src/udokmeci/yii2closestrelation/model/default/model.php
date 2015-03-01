@@ -34,6 +34,12 @@ use Yii;
  */
 class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . "\n" ?>
 {
+
+    /**
+     * Get the closest class that has same name in extending sort.
+     */
+    use \udokmeci\yii2closestrelation\ClosestRelationTrait
+
     /**
      * @inheritdoc
      */
