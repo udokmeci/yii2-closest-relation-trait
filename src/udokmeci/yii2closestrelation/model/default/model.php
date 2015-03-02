@@ -38,7 +38,7 @@ class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . 
     /**
      * Get the closest class that has same name in extending sort.
      */
-    use \udokmeci\yii2closestrelation\ClosestRelationTrait
+    use \udokmeci\yii2closestrelation\ClosestRelationTrait;
 
     /**
      * @inheritdoc
